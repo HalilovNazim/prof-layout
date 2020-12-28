@@ -1,0 +1,403 @@
+button {
+    border: none;
+    background-color: transparent;
+}
+
+body {
+    font-family: 'lato', sans-serif;
+}
+
+.hidden {
+    display: none;
+    width: 0;
+    height: 0;
+}
+
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+.header {
+    height: 75px;
+    background-color: #222;
+    display: flex;
+    align-items: center;
+}
+
+.header-contaner {
+    display: flex;
+}
+
+.button-search {
+    margin: 0 0 0 41px;
+}
+
+.header__menu-list {
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+}
+
+.menu-list__item:not(:last-child) {
+    margin-right: 33px;
+}
+
+.header-main {
+    background-color: #f1e4e6;
+    display: flex;
+    align-items: center;
+    width: 1600px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.branch {
+    width: 12px;
+    height: 92px;
+    background-color: #f16d7f;
+    margin: 0 16px 0 64px;
+}
+
+.header-main__title {
+    text-transform: uppercase;
+    font-size: 32px;
+    font-weight: 700;
+    color: #222;
+    width: 377px;
+}
+
+.the-brand {
+    font-size: 48px;
+    font-weight: 900;
+}
+
+.fashion {
+    color: #f16d7f;
+}
+
+.nav {
+    width: 232px;
+    height: 764px;
+    background-color: #fff;
+    position: absolute;
+    right: 0;
+}
+
+.nav__list {
+    margin: 24px 0 0 33px;
+}
+
+.nav__title {
+    font-weight: 700;
+    font-size: 14px;
+    color: #000;
+    text-transform: uppercase;
+    margin: 37px 0 0 33px;
+}
+
+.nav-item {
+    margin: 20px 0 0 0;
+}
+
+.nav-item__title {
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 14px;
+    color: #f16d7f;
+}
+
+.nav-list__item {
+    margin-left: 24px;
+    padding-top: 11px;
+}
+
+.nav-item__subtitle {
+    text-transform: capitalize;
+    font-weight: 400;
+    font-size: 14px;
+    color: #6f6f6f;
+}
+
+.discounts {
+    margin-top: 63px;
+}
+
+.discounts__list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.discounts__item {
+    width: 360px;
+    height: 260px;
+    display: flex;
+    margin-right: 30px;
+}
+
+.discounts__text {
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+    margin: auto;
+    text-align: center;
+}
+
+.discounts__text-styled {
+    font-size: 24px;
+    font-weight: 700;
+    color: #f16d7f;
+}
+
+.discounts__item-1 {
+    background-image: url(../img/discounts1.jpg);
+}
+
+.discounts__item-2 {
+    background-image: url(../img/discounts2.jpg);
+}
+
+.discounts__item-3 {
+    background-image: url(../img/discounts3.jpg);
+    margin: 0;
+}
+
+
+.discounts__item-4 {
+    display: flex;
+    width: 1140px;
+    height: 180px;
+    background-image: url(../img/discounts4.jpg);
+    background-repeat: no-repeat;
+    align-content: flex-end;
+    margin: 30px 0 0 0;
+}
+
+.featured {
+    margin: 97px auto 95px auto;
+}
+
+.featured__title {
+    font-size: 30px;
+    font-weight: 400;
+    color: #222;
+    text-align: center;
+}
+
+.featured__description {
+    font-size: 14px;
+    font-weight: 400;
+    color: #9f9f9f;
+    text-align: center;
+    margin: 10px 0 48px 0;
+}
+
+.featured__list-item {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 12px;
+}
+
+.featured__items {
+    width: 360px;
+    height: 582px;
+    margin: 0 30px 30px 0;
+    background-color: #f8f8f8;
+}
+
+.featured__items:nth-child(3n) {
+    margin-right: 0;
+}
+
+.product__pic:hover {
+    filter: opacity(50%);
+}
+
+.product__name {
+    font-size: 13px;
+    font-weight: 400;
+    color: #000;
+    text-transform: uppercase;
+    margin: 25px 0 0 18px;
+}
+
+.product__description {
+    font-size: 14px;
+    font-weight: 300;
+    color: #5d5d5d;
+    margin: 12px 29px 0 16px;
+    line-height: 17px;
+}
+
+.product__price {
+    margin: 18px 0 0 18px;
+    font-size: 18px;
+    font-weight: 400;
+    color: #f16d7f;
+}
+
+.browse-all-product {
+    text-transform: capitalize;
+    font-size: 16px;
+    font-weight: 400;
+    color: #f26376;
+    border: 1px solid #ff6a6a;
+    padding: 15px 38px;
+    margin-top: 48px;
+    margin-left: calc(50% - 106px);
+}
+
+.browse-all-product:hover {
+    background-color: #f26376;
+    color: #fff;
+    transition-duration: 0.5s;
+}
+
+.offers {
+    background-color: #222224;
+    height: 341px;
+}
+
+.offers__list {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.offers__item {
+    margin: 103px 0 0 0;
+    width: 360px;
+}
+
+.offers__name {
+    color: #fbfbfb;
+    font-weight: 400;
+    font-size: 20px;
+    margin-top: 20px
+}
+
+.offers__description {
+    font-weight: 300;
+    font-size: 14px;
+    color: #fbfbfb;
+    margin: 16px 32px 0;
+}
+
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.subscribe-content {
+    background-image: url(../img/background-footer.jpg);
+    background-repeat: no-repeat;
+    height: 448px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 1600px;
+}
+
+.subscribe-content__info {
+    width: 360px;
+    text-align: center;
+    margin: 0 0 0 230px;
+}
+
+.subscribe-content__quote {
+    font-weight: 400;
+    font-size: 20px;
+    color: #222224;
+    margin-top: 20px;
+}
+
+.subscribe-content__btn {
+    text-align: center;
+    display: flex;
+    margin: 0 230px 0 0;
+}
+
+.subscribe-content__title {
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #222224;
+    line-height: 30px;
+}
+
+.subscribe {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 38px;
+}
+
+.footer__email {
+    width: 220px;
+    height: 50px;
+    border: none;
+    background-color: #e1e1e1;
+    border-radius: 27px 0 0 27px;
+    padding: 0 0 0 22px;
+    margin-top: 32px;
+    line-height: 50px
+}
+
+.footer__email:focus {
+    outline: none;
+}
+
+input[type="submit"] {
+    background-color: #f16d7f;
+    width: 100px;
+    height: 50px;
+    border-radius: 0 27px 27px 0;
+    border: none;
+    font-weight: 400;
+    color: #fff;
+    font-size: 14px;
+}
+
+input[type="submit"]:focus {
+    outline: none;
+}
+
+.copyright {
+    background-color: #222224;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.copyright-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.copyright__text {
+    font-weight: 400;
+    font-size: 16px;
+    color: #fbfbfb;
+    line-height: 32px;
+}
+
+.copyright__social-list {
+    display: flex;
+    justify-content: flex-end;
+    width: 200px;
+}
+
+.copyright__social-link {
+    width: 32px;
+    height: 32px;
+    background-color: #fff;
+    margin: 0 7px 0 0;
+    text-align: center;
+    line-height: 32px;
+}
+
+.copyright__social-link:nth-child(2) {
+    background-color: #f16d7f;
+}
