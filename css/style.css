@@ -50,6 +50,7 @@ body {
     width: 1600px;
     margin: 0 auto;
     position: relative;
+    height: 764px;
 }
 
 .branch {
@@ -401,3 +402,92 @@ input[type="submit"]:focus {
 .copyright__social-link:nth-child(2) {
     background-color: #f16d7f;
 }
+
+.registration-breadcrumb {
+    height: 148px;
+    background-color: #f8f3f4;
+    display: flex;
+}
+
+.registration-breadcrumb__text {
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 24px;
+    color: #f16d7f;
+    display: flex;
+    align-items: center;
+}
+
+.registration__block {
+    padding-top: 64px;
+    
+}
+
+.registration__form {
+    display: inline-block;
+}
+
+.registration__name {
+    font-weight: 300;
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #222222;
+    margin: 0 0 20px 0;
+}
+
+.registration__input {
+    width: 360px;
+    height: 45px;
+    border: 1px solid #a4a4a4;
+    padding: 10px 0 0 17px;
+    margin-bottom: 21px;
+    display: block;
+    font-size: 14px;
+}
+
+.registration__input:focus {
+    outline: none;
+}
+
+.registration__radio {
+    border: 1px solid #a4a4a4;
+    width: 17px;
+    margin-top: 12px;
+}
+
+.registration__gender {
+    font-weight: 300;
+    font-size: 12px;
+    text-transform: capitalize;
+    line-height: 18px;
+    margin: 0 20px 0 0;
+}
+
+.registration__details {
+    margin: 33px 0 0 0;
+}
+
+.registration__rules {
+    width: 360px;
+    font-weight: 300;
+    color: #b1b1b1;
+    font-size: 13px;
+    margin-top: -5px;
+    line-height: 16px;
+}
+
+.registration__submit {
+    background-color: #f16d7f;
+    font-size: 14px;
+    font-weight: 400;
+    color: #fff;
+    text-transform: uppercase;
+    width: 167px;
+    height: 50px;
+    margin: 39px 0 96px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
