@@ -1,0 +1,18 @@
+.header {
+    height: 75px;
+    background-color: $nice-black;
+    @include position(flex, normal, center);
+}
+
+.header-container {
+    display: flex;
+}
+
+.header__menu-list {
+    @include position(flex, normal, center);
+    margin-left: auto;
+}
+
+.menu-list__item:not(:last-child) {
+    margin-right: 33px;
+}

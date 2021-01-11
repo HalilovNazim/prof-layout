@@ -23,7 +23,8 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
-	line-height: 1;
+    line-height: 1;
+    font-family: 'lato', sans-serif;
 }
 ol, ul {
 	list-style: none;
@@ -43,4 +44,24 @@ table {
 
 a {
     text-decoration: none;
+}
+
+button {
+    border: none;
+    background-color: transparent;
+}
+
+.button-search {
+    margin: 0 0 0 41px;
+}
+
+.hidden {
+    display: none;
+    width: 0;
+    height: 0;
+}
+
+.container {
+    width: 1140px;
+    margin: 0 auto;
 }
