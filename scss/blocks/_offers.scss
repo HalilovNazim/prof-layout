@@ -1,0 +1,24 @@
+.offers {
+    background-color: #222224;
+    height: 341px;
+}
+
+.offers__list {
+    @include position(flex, center, normal);
+    text-align: center;
+}
+
+.offers__item {
+    margin: 103px 0 0 0;
+    width: 360px;
+}
+
+.offers__name {
+    @include font-settings(20px, 400, $color-white);
+    margin-top: 20px
+}
+
+.offers__description {
+    @include font-settings(14px, 300, $color-white);
+    margin: 16px 32px 0;
+}

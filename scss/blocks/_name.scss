@@ -1,0 +1,30 @@
+.name {
+    background-color: $dull-pink;
+    @include position(flex, normal, center);
+    width: 1600px;
+    margin: 0 auto;
+    position: relative;
+    height: 764px;
+}
+
+.branch {
+    width: 12px;
+    height: 92px;
+    background-color: $deep-pink;
+    margin: 0 16px 0 64px;
+}
+
+.name__title {
+    text-transform: uppercase;
+    @include font-settings(32px, 700, $nice-black);
+    width: 377px;
+}
+
+.the-brand {
+    font-size: 48px;
+    font-weight: 900;
+}
+
+.fashion {
+    color: $deep-pink;
+}

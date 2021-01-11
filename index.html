@@ -4,29 +4,28 @@
 <head>
     <meta charset="UTF-8">
     <title>Dress-shop</title>
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="scss/app.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header class="header">
-        <div class="container header-contaner">
+        <div class="container header-container">
             <a href="#"><img src="img/logo.svg" alt="logo" width="44" height="38"></a>
             <button class="button-search"><img src="img/search.svg" alt="search" width="26" height="26"></button>
             <ul class="header__menu-list menu-list">
-                <li class="menu-list__item"><button><img src="img/menu.svg" alt="menu"></button></li>
-                <li class="menu-list__item"><button><img src="img/accounts.svg" alt="acc"></button></li>
-                <li class="menu-list__item"><button><img src="img/basket.svg" alt="basket"></button></li>
+                <li class="menu-list__item"><a href="#"><img src="img/menu.svg" alt="menu"></a></li>
+                <li class="menu-list__item"><a href="registration.html"><img src="img/accounts.svg" alt="acc"></a></li>
+                <li class="menu-list__itesm"><a href="#"><img src="img/basket.svg" alt="basket"></a></li>
             </ul>
         </div>
     </header>
     <main>
-        <section class="header-main">
+        <section class="name">
             <img src="img/header_content.jpg" alt="header_content">
             <span class="branch"></span>
-            <h2 class="header-main__title"><span class="the-brand">the brand<br></span>of luxerious <span class="fashion">fashion</span></h2>
+            <h2 class="name__title"><span class="the-brand">the brand<br></span>of luxerious <span class="fashion">fashion</span></h2>
             <nav class="nav">
                 <h2 class="nav__title">menu</h2>
                 <ul class="nav__list nav-list">
@@ -171,4 +170,6 @@
             </div>
         </section>
     </footer>
-</body></html>
+</body>
+
+</html>
