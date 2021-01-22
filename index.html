@@ -14,22 +14,16 @@
     <header class="header">
         <div class="container header-container autopadding">
             <div>
-                <a href="#"><img src="img/logo.svg" alt="logo" width="44" height="38"></a>
+                <a class="header__logo-link" href="#"><img class="header__logo-pic" src="img/logo.svg" alt="logo"></a>
                 <button class="button-search"><img src="img/search.svg" alt="search" width="26" height="26"></button>
             </div>
             <ul class="header__menu-list menu-list">
-                <li class="menu-list__item"><a href="#"><img src="img/menu.svg" alt="menu"></a></li>
+                <li class="menu-list__item"><button><img src="img/menu.svg" alt="menu"></button></li>
                 <li class="menu-list__item"><a href="registration.html"><img src="img/accounts.svg" alt="acc"></a></li>
                 <li class="menu-list__item"><a href="#"><img src="img/basket.svg" alt="basket"></a></li>
             </ul>
         </div>
-    </header>
-    <main>
-        <section class="name">
-            <img class="name__img" src="img/header_content.jpg" alt="header_content">
-            <span class="branch"></span>
-            <h2 class="name__title"><span class="the-brand">the brand<br></span>of luxerious <span class="fashion">fashion</span></h2>
-            <!-- <nav class="nav">
+        <!-- <nav class="nav">
                 <h2 class="nav__title">menu</h2>
                 <ul class="nav__list nav-list">
                     <li class="nav__item nav-item">
@@ -64,8 +58,13 @@
                     </li>
                 </ul>
             </nav> -->
+    </header>
+    <main>
+        <section class="name">
+            <img class="name__img" src="img/header_content.jpg" alt="header_content">
+            <h2 class="name__title"><span class="the-brand">the brand<br></span>of luxerious <span class="fashion">fashion</span></h2>
         </section>
-        <!-- <section class="discounts container">
+        <section class="discounts discounts-container">
             <h2 class="hidden">discounts</h2>
             <ul class="discounts__list">
                 <li class="discounts__item discounts__item-1">
@@ -82,7 +81,7 @@
                 </li>
             </ul>
         </section>
-        <section class="featured container">
+        <!-- <section class="featured container">
             <h2 class="featured__title">Fetured Items</h2>
             <p class="featured__description">Shop for items based on what we featured in this week</p>
             <ul class="featured__list-item">

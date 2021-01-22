@@ -2,21 +2,29 @@
     height: 75px;
     background-color: $nice-black;
     @include position(flex, normal, center);
-    min-width: 1280px;
+    min-width: 882px;
 
     @include tablet {
-        min-width: 768px;
+        min-width: 700px;
+    }
+
+    @include mobile {
+        min-width: 300px;
     }
 }
 
 .header-container {
     display: flex;
-    width: 1600px;
+    width: 1140px;
     margin: 0 auto;
     justify-content: space-between;
     
     @include tablet {
-        width: 768px;
+        width: 704px;
+    }
+
+    @include mobile {
+        width: 343px;
     }
 }
 
@@ -32,4 +40,8 @@
 
 .menu-list__item:not(:last-child) {
     margin-right: 33px;
+
+    @include mobile {
+        margin-right: 0;
+    }
 }

@@ -1,58 +1,54 @@
 .name {
     background-color: $dull-pink;
     @include position(flex, normal, center);
-    max-width: 1600px;
-    min-width: 1280px;
-    height: 764px;
     margin: 0 auto;
-    position: relative;
+    max-width: 1600px;
+    min-width: 882px;
 
     @include tablet {
-        height: 369px;
         max-width: 768px;
-        min-width: 768px;
+        min-width: 700px;
     }
 
     @include mobile {
-        justify-content: center;
         height: 375px;
-        width: 100%;
+        min-width: 236px;
+        max-width: 375px;
+        justify-content: center;
     }
 }
 
 .name__img {
     max-width: 800px;
+    width: 50%;
     height: auto;
-
-    @include tablet {
-        width: 385px;
-    }
 
     @include mobile {
         display: none;
     }
 }
 
-.branch {
-    width: 12px;
-    height: 92px;
-    background-color: $deep-pink;
-    margin: 0 16px 0 64px;
-    
-    @include tablet {
-        margin-left: 40px;
-    }
-
-    @include mobile {
-        height: 62px;
-        margin-left: 56px;
-    }
-}
-
 .name__title {
     text-transform: uppercase;
+    position: relative;
+    margin-left: 64px;
     @include font-settings(32px, 700, $nice-black);
+    width: 50%;
     min-width: 377px;
+
+    &::before {
+        position: absolute;
+        content: '';
+        background-color: $deep-pink;
+        width: 12px;
+        height: 92px;
+        left: -16px;
+        
+
+        @include mobile {
+            height: 62px;
+        }
+    }
 
     @include tablet {
         font-size: 24px;
@@ -62,6 +58,7 @@
     @include mobile {
         font-size: 20px;
         min-width: 236px;
+        margin: 0;
     }
 }
 
