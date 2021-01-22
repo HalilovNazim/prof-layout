@@ -52,7 +52,7 @@ button {
 }
 
 .button-search {
-    margin: 0 0 0 41px;
+    margin: 0 0 0 25px;
 }
 
 .hidden {
@@ -61,7 +61,22 @@ button {
     height: 0;
 }
 
-.container {
-    width: 1140px;
-    margin: 0 auto;
+.autopadding {
+	padding-left: 230px;
+	padding-right: 230px;
+
+	@include tablet {
+		padding-left: 32px;
+		padding-right: 32px;
+	}
+
+	@include mobile {
+		padding-right: 16px;
+		padding-left: 16px;
+	}
 }
+
+// .container {
+//     width: 1140px;
+// 	margin: 0 auto;
+// }

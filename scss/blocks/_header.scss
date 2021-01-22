@@ -2,15 +2,32 @@
     height: 75px;
     background-color: $nice-black;
     @include position(flex, normal, center);
+    min-width: 1280px;
+
+    @include tablet {
+        min-width: 768px;
+    }
 }
 
 .header-container {
     display: flex;
+    width: 1600px;
+    margin: 0 auto;
+    justify-content: space-between;
+    
+    @include tablet {
+        width: 768px;
+    }
 }
 
 .header__menu-list {
     @include position(flex, normal, center);
-    margin-left: auto;
+
+    @include mobile {
+        .menu-list__item:not(:first-child) {
+            display: none;
+        }
+    }
 }
 
 .menu-list__item:not(:last-child) {
