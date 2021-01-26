@@ -63,18 +63,22 @@ button {
 }
 
 .autopadding {
-	padding-left: 230px;
-	padding-right: 230px;
+	padding-left: 230 / 1600 * 100%;
+	padding-right: 230 / 1600 * 100%;
 
 	@include tablet {
-		padding-left: 32px;
-		padding-right: 32px;
+		padding-left: 32 / 768 * 100%;
+		padding-right: 32 / 768 * 100%;
 	}
 
 	@include mobile {
-		padding-right: 16px;
-		padding-left: 16px;
+		padding-right: 16 / 375 * 100%;
+		padding-left: 16 / 375 * 100%;
 	}
+}
+
+.combination {
+	width: 100%;
 }
 
 // .container {

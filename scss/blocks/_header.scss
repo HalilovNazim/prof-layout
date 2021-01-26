@@ -2,15 +2,6 @@
     height: 75px;
     background-color: $nice-black;
     @include position(flex, normal, center);
-    min-width: 882px;
-
-    @include tablet {
-        min-width: 700px;
-    }
-
-    @include mobile {
-        min-width: 300px;
-    }
 }
 
 .header-container {
