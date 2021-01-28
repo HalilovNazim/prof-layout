@@ -1,16 +1,29 @@
 .offers {
     background-color: #222224;
-    height: 341px;
+    min-height: 341px;
+
+    @include tablet {
+        min-height: 610px;
+    }
 }
 
 .offers__list {
-    @include position(flex, center, normal);
+    margin: 0 auto;
+    max-width: 1140px;
+    @include position(flex, center, space-between);
     text-align: center;
+    flex-wrap: wrap;
 }
 
 .offers__item {
     margin: 103px 0 0 0;
-    width: 360px;
+    width: 360 / 1140 * 100%;
+
+    @include tablet {
+        margin-top: 48px;
+        width: 360 / 704 * 100%;
+        min-width: 350px;
+    }
 }
 
 .offers__name {

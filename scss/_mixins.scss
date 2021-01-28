@@ -9,3 +9,15 @@
     justify-content: $justify-content;
     align-items: $align-items;
 }
+
+@mixin tablet {
+    @media only screen and (max-width: 768px){
+        @content;
+    }
+}
+
+@mixin mobile {
+    @media only screen and (max-width: 375px){
+        @content;
+    }
+}

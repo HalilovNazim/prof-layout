@@ -52,7 +52,8 @@ button {
 }
 
 .button-search {
-    margin: 0 0 0 41px;
+	margin: 0 0 0 18px;
+	align-items: center;
 }
 
 .hidden {
@@ -61,7 +62,21 @@ button {
     height: 0;
 }
 
-.container {
-    width: 1140px;
-    margin: 0 auto;
+.autopadding {
+	padding-left: 230 / 1600 * 100%;
+	padding-right: 230 / 1600 * 100%;
+
+	@include tablet {
+		padding-left: 32 / 768 * 100%;
+		padding-right: 32 / 768 * 100%;
+	}
+
+	@include mobile {
+		padding-right: 16 / 375 * 100%;
+		padding-left: 16 / 375 * 100%;
+	}
+}
+
+.combination {
+	width: 100%;
 }
