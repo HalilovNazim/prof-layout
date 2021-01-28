@@ -4,30 +4,67 @@
 <head>
     <meta charset="UTF-8">
     <title>Dress-shop</title>
-    <link rel="stylesheet" href="scss/app.css">
+    <link rel="stylesheet" href="css/app.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header class="header">
-        <div class="container header-container">
-            <a href="index.html"><img src="img/logo.svg" alt="logo" width="44" height="38"></a>
-            <button class="button-search"><img src="img/search.svg" alt="search" width="26" height="26"></button>
+        <div class="header-container">
+            <div>
+                <a class="header__logo-link" href="#"><img class="header__logo-pic" src="img/logo.svg" alt="logo"></a>
+                <button class="button-search"><img src="img/search.svg" alt="search" width="26" height="26"></button>
+            </div>
             <ul class="header__menu-list menu-list">
-                <li class="menu-list__item"><a href="#"><img src="img/menu.svg" alt="menu"></a></li>
-                <li class="menu-list__item"><a href="#"><img src="img/accounts.svg" alt="acc"></a></li>
-                <li class="menu-list__itesm"><a href="#"><img src="img/basket.svg" alt="basket"></a></li>
+                <li class="menu-list__item"><button><img src="img/menu.svg" alt="menu"></button></li>
+                <li class="menu-list__item"><a href="registration.html"><img src="img/accounts.svg" alt="acc"></a></li>
+                <li class="menu-list__item"><a href="#"><img src="img/basket.svg" alt="basket"></a></li>
             </ul>
         </div>
+        <!-- <nav class="nav">
+                <h2 class="nav__title">menu</h2>
+                <ul class="nav__list nav-list">
+                    <li class="nav__item nav-item">
+                        <a href="#" class="nav-item__title">man</a>
+                        <ul class="">
+                            <li class="nav-list__item"><a href="#" class="nav-item__subtitle">accessories</a></li>
+                            <li class="nav-list__item"><a href="#" class="nav-item__subtitle">bags</a></li>
+                            <li class="nav-list__item"><a href="#" class="nav-item__subtitle">denim</a></li>
+                            <li class="nav-list__item"><a href="#" class="nav-item__subtitle">t-shirts</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav__item nav-item">
+                        <a href="#" class="nav-item__title">woman</a>
+                        <ul class="">
+                            <li class="nav-list__item"><a href="#" class="nav-item__subtitle">accessories</a></li>
+                            <li class="nav-list__item"><a href="#" class="nav-item__subtitle">jackets & coats</a></li>
+                            <li class="nav-list__item"><a href="#" class="nav-item__subtitle">polos</a></li>
+                            <li class="nav-list__item"><a href="#" class="nav-item__subtitle">t-shirts</a></li>
+                            <li class="nav-list__item"><a href="#" class="nav-item__subtitle">shirts</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav__item nav-item">
+                        <a href="#" class="nav-item__title">kids</a>
+                        <ul class="">
+                            <li class="nav-list__item"><a href="#" class="nav-item__subtitle">accessories</a></li>
+                            <li class="nav-list__item"><a href="#" class="nav-item__subtitle">jackets & coats</a></li>
+                            <li class="nav-list__item"><a href="#" class="nav-item__subtitle">polos</a></li>
+                            <li class="nav-list__item"><a href="#" class="nav-item__subtitle">t-shirts</a></li>
+                            <li class="nav-list__item"><a href="#" class="nav-item__subtitle">shirts</a></li>
+                            <li class="nav-list__item"><a href="#" class="nav-item__subtitle">bags</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav> -->
     </header>
     <main>
         <section class="registration">
            <h2 class="hidden">register</h2>
             <div class="registration__breadcrumb registration-breadcrumb">
-                <h2 class="registration-breadcrumb__text container">registration</h2>
+                <h2 class="registration-container registration-breadcrumb__text">registration</h2>
             </div>
-            <div class="registration__block container">
+            <div class="registration__block">
                 <form action="" class="registration__form">
                     <fieldset>
                        <legend class="registration__name">your name</legend>
@@ -57,13 +94,13 @@
             <div class="subscribe-content__btn">
                 <form action="">
                     <p class="subscribe-content__title"><span class="subscribe">subscribe</span><br>for our newletter and promotion</p>
-                    <input type="email" placeholder="Enter Your Email" class="footer__email"><input type="submit" value="Subscribe">
+                    <input type="email" placeholder="Enter Your Email" class="footer__email"><button class="footer__btn">Subscribe</button>
                 </form>
             </div>
         </section>
         <section class="footer__content copyright">
             <h2 class="hidden">copyright</h2>
-            <div class="container copyright-container">
+            <div class="copyright-container">
                 <p class="copyright__text">&copy; 2021 Brand All Rights Reserved.</p>
                 <ul class="copyright__social-list">
                     <li class="copyright__social-link"><a href="#"><img src="img/facebook.svg" alt="facebook"></a></li>
